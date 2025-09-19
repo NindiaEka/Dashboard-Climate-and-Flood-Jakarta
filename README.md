@@ -1,4 +1,4 @@
-# Data Curah Hujan Tahun 2016 - 2020
+#  Flood Analytics for Farmers
 
 ## Repository Outline
 1. README.md - Penjelasan gambaran umum project
