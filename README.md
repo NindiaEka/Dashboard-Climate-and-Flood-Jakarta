@@ -1,16 +1,5 @@
 #  Flood Analytics for Farmers
 
-## Repository Outline
-1. README.md - Penjelasan gambaran umum project
-2. P0M1_Nindia-Ekasuci.ipynb - Notebook yang berisi pengolahan data dengan python
-3. P0M1_Nindia-Ekasuci_dataset.csv - File csv dari hasil export di VS code
-4. P0M1_Nindia-Ekasuci_dataset.xls - File excel dari hasil csv untuk import ke tableau
-5. Data_raw.csv - File csv yang diambil dari website kaggle
-6. Milestone1.twbx - File tableau yang berisi dashboard hasil visualisasi, analisa deskriptif dan inferensial
-7. Peta_DKIJakarta.shp - File shapefile untuk input peta ke dalam tableau
-8. GeoJKT.geojson - File geojson untuk input peta ke dalam python (membuat choropleth)
-
-
 ## Problem Background
 Cuaca ekstrem dan banjir merupakan tantangan besar bagi petani, terutama di wilayah Jakarta dan sekitarnya. Banjir yang tidak terprediksi dapat merusak tanaman, menunda masa tanam, hingga menyebabkan gagal panen. Informasi terkait pola cuaca dan musim banjir masih jarang diakses secara sistematis oleh petani.
 Analisis data cuaca dan kejadian banjir selama lima tahun terakhir diharapkan dapat membantu petani dalam mengambil keputusan yang lebih tepat terkait waktu tanam, pemupukan, dan panen, serta sebagai dasar mitigasi risiko gagal panen akibat banjir.
