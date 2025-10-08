@@ -1,33 +1,77 @@
-#  Weather Data Analysis & Dashboard
+# 🌦️ Weather Data Analysis & Dashboard – Jakarta
 
-## Problem Background
-Cuaca ekstrem dan banjir merupakan tantangan besar bagi petani, terutama di wilayah Jakarta dan sekitarnya. Banjir yang tidak terprediksi dapat merusak tanaman, menunda masa tanam, hingga menyebabkan gagal panen. Informasi terkait pola cuaca dan musim banjir masih jarang diakses secara sistematis oleh petani.
-Analisis data cuaca dan kejadian banjir selama lima tahun terakhir diharapkan dapat membantu petani dalam mengambil keputusan yang lebih tepat terkait waktu tanam, pemupukan, dan panen, serta sebagai dasar mitigasi risiko gagal panen akibat banjir.
+## 📘 Problem Background  
+Extreme weather and flooding are major challenges for farmers, especially in Jakarta and surrounding areas.  
+Unpredictable floods can damage crops, delay planting seasons, and even lead to crop failure.  
 
+Currently, access to systematic information regarding weather patterns and flood seasons remains limited for farmers.  
+By analyzing **five years of weather and flood data**, this project aims to help farmers make better decisions on **planting time, fertilization, and harvesting**, while also serving as a foundation for **flood risk mitigation** in agriculture.
 
-## Project Output
-Output project ini adalah dashboard yang menampilkan data curah hujan dan banjir yang nantinya akan digunakan sebagai pengambilan keputusan  yang lebih tepat terkait waktu tanam dan mengurasi resiko gagal panen akibat banjir. Berikut link dashboard nya https://public.tableau.com/app/profile/nindia.ekasuci.larasati/viz/P0M1_Nindia-Ekasuci/Dashboard1?publish=yes.
+---
 
-## Data
-Dataset bisa diakses pada link berikut :
-https://www.kaggle.com/datasets/christopherrichardc/climate-and-flood-jakarta/data
-Jumlah kolom awal ada 6308 baris dengan 15 kolom. Ada beberapa missing value pada data ini, yaitu pada data curah hujan dan waktu lama penyinaran. Missing value tersebut diimputasi dengan nilai median dari masing - masing kolom. Alasan menginputasi data karena jika data di hapus maka ada informasi (nama stasiun) yang menghilang.
+## 🎯 Project Output  
+This project produces an **interactive dashboard** that visualizes rainfall and flood data to support data-driven agricultural decisions, helping farmers reduce crop failure risks caused by floods.  
 
-## Method
-1. Data Cleaning : Menghapus data yang tidak lengkap dengan menggunakan imputasi nilai median pada curah hujan dan lama penyinaranserta  menyatukan informasi cuaca dan banjir.
-2. Statistik Deskriptif : Menghitung rata-rata, sebaran, skewness, dan kurtosis untuk memahami pola cuaca.
-3. Visualisasi Data: Menggunakan line chart, bar chart, boxplot, dan choropleth map untuk melihat tren dan pola geografis.
-4. Statistik Inferensial: ANOVA untuk uji perbedaan suhu antar bulan
-5. Uji t untuk membandingkan suhu saat banjir dan tidak
-6. Chi-square & Cramer's V untuk hubungan wilayah dan banjir
+🔗 **View the Dashboard here:**  
+[Weather & Flood Dashboard – Tableau](https://public.tableau.com/app/profile/nindia.ekasuci.larasati/viz/P0M1_Nindia-Ekasuci/Dashboard1?publish=yes)
 
-## Stacks
-Stack yang digunakan yaitu menggunakan bahasa pemrograman python, tools yang digunakan adalah QGIS untuk mengekstrak wilayah menjadi file shapefile dan tableau untuk membuat dashboard. Library yang digunakan adalah pandas, numpy, matplotlib.pyplot, geopandas, folium, seaborn.
+---
 
-## Reference
-- [Referensi Dashboard](https://public.tableau.com/app/profile/tam.s.varga/viz/Superstore-Bento-Box/PerformanceOverview)
-- [Referensi Dashboard](https://public.tableau.com/app/profile/faishal.kemal/viz/DashboardSuicideAnalysis/SuicideDataAnalysis)
-- [Referensi Data](https://www.kaggle.com/datasets/christopherrichardc/climate-and-flood-jakarta/data)
-- [Hasil_dashboard](https://public.tableau.com/app/profile/nindia.ekasuci.larasati/viz/P0M1_Nindia-Ekasuci/Dashboard1?publish=yes)
+## 📊 Data Source  
+Dataset used: [Climate and Flood Jakarta (Kaggle)](https://www.kaggle.com/datasets/christopherrichardc/climate-and-flood-jakarta/data)
 
+- **Rows:** 6,308  
+- **Columns:** 15  
+- **Missing Values:** Found in rainfall and sunlight duration columns.  
+  These missing values were **imputed using the median** to preserve essential information such as station names.  
 
+---
+
+## 🧠 Methodology  
+
+### 1. **Data Cleaning**
+- Handled missing values using **median imputation** for rainfall and sunlight duration.  
+- Merged weather and flood datasets into a single analytical dataset.  
+
+### 2. **Descriptive Statistics**
+- Calculated **mean, variance, skewness,** and **kurtosis** to understand weather patterns.
+
+### 3. **Data Visualization**
+- Created **line charts, bar charts, boxplots,** and **choropleth maps** to explore temporal and spatial trends.
+
+### 4. **Inferential Statistics**
+- **ANOVA Test:** To analyze temperature differences across months.  
+- **T-Test:** To compare temperature during flood and non-flood periods.  
+- **Chi-Square & Cramer’s V:** To identify relationships between regions and flood occurrences.
+
+---
+
+## 🧰 Tech Stack  
+
+| Category | Tools & Libraries |
+|-----------|-------------------|
+| **Programming** | Python |
+| **Data Analysis Libraries** | Pandas, NumPy, Seaborn, Matplotlib |
+| **Geospatial Tools** | GeoPandas, Folium, QGIS (for shapefile extraction) |
+| **Visualization** | Tableau |
+| **IDE/Environment** | Jupyter Notebook |
+
+---
+
+## 📚 References  
+- **Dashboard Inspiration:** Various Tableau Public projects on climate data visualization  
+- **Data Source:** Kaggle – *Climate and Flood Jakarta*  
+- **Final Dashboard:** [View Here](https://public.tableau.com/app/profile/nindia.ekasuci.larasati/viz/P0M1_Nindia-Ekasuci/Dashboard1?publish=yes)
+
+---
+
+## 🌾 Project Impact  
+This dashboard provides valuable insights into **Jakarta’s weather and flood dynamics**, supporting:  
+- **Farmers** in choosing the right planting and harvesting time.  
+- **Decision-makers** in designing better flood mitigation strategies.  
+- **Researchers** in understanding long-term weather trends in urban and agricultural contexts.
+
+---
+
+💡 *Created by [Nindia Ekasuci Larasati](https://www.linkedin.com/in/nindia-ekasuci-larasati/)*  
+🎓 *Master’s in Geophysical Engineering | Data Science Enthusiast*  
